@@ -2,7 +2,8 @@
 Decorate your functions with a default value and set OfflineSandbox.SANDBOX to your Online/Offline status
 
 
-```import OfflineSandbox
+```
+import OfflineSandbox
 
 OfflineSandbox.SANDBOX = False
 
@@ -15,12 +16,15 @@ print(greet())
 
 OfflineSandbox.SANDBOX = True
 
-print(greet())```
+print(greet())
+```
 
 You can also respond given the availability of a specific URL
 
-```@OfflineSandbox.offline_sandbox_value('mundo', url='https://im-online.herokuapp.com/')
+```
+@OfflineSandbox.offline_sandbox_value('mundo', url='https://im-online.herokuapp.com/')
 def greet_with_url():
     return 'hola'
 
-print(greet_with_url())```
+print(greet_with_url())
+```
